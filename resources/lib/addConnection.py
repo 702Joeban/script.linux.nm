@@ -110,6 +110,9 @@ class GUI(xbmcgui.WindowXMLDialog):
     def onAction(self, action):
         if action in self.action_cancel_dialog:
             self.closeDialog()
+            
+    def closeDialog(self):
+        self.close()
 
     def onFocus(self, controlId):
         msg = ""
